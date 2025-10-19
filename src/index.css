@@ -1,0 +1,47 @@
+/* ============================================== */
+/* 1. IMPORTACIONES DE TERCEROS (PrimeReact) */
+/* Deben ir al inicio del archivo, antes de @tailwind */
+/* ============================================== */
+
+/* 1.1. Tema de PrimeReact */
+@import "primereact/resources/themes/lara-light-teal/theme.css";
+
+/* 1.2. Estilos Core de PrimeReact y PrimeIcons */
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css"; 
+
+
+/* ============================================== */
+/* 2. DIRECTIVAS DE TAILWIND CSS */
+/* Deben ir después de todos los @import */
+/* ============================================== */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ============================================== */
+/* 3. ESTILOS PERSONALIZADOS / BASE DEL PROYECTO */
+/* ============================================== */
+
+body, #root {
+    /* Ocupa el 100% de la altura de la ventana (necesario para h-full) */
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+    /* Aplicar un fondo simple si es necesario */
+    background-color: #f7f9fc; 
+}
+
+/* Puedes añadir aquí cualquier otro estilo personalizado */
+
+/* Después de tus @tailwind directives */
+.p-button {
+  transition: all 0.3s ease;
+}
+
+.p-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
