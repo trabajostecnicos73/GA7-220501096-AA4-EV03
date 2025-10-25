@@ -34,9 +34,9 @@ body, #root {
     background-color: #f7f9fc; 
 }
 
-/* Puedes añadir aquí cualquier otro estilo personalizado */
+/* aquí se puede añadir cualquier otro estilo personalizado */
 
-/* Después de tus @tailwind directives */
+/* Después de  @tailwind directives */
 .p-button {
   transition: all 0.3s ease;
 }

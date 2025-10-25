@@ -12,7 +12,7 @@ import logotipoSmartParking from './assets/logotipoSmartParking.jpg';
  */
 const Login = ({ onNavegar }) => {
     
-    // URL de la API de Express (Asegúrate de que el servidor esté corriendo aquí)
+    // URL de la API de Express 
     const API_URL = 'http://localhost:3000/api/auth'; 
 
     // Estado local para almacenar los datos del formulario (conservando nombres del frontend)

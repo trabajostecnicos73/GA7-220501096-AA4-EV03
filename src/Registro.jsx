@@ -10,7 +10,7 @@ const API_URL = 'http://localhost:3000/api/auth';
  * Componente funcional: Registro.
  * Vista de registro de nuevos usuarios con conexión a la API de Express.
  * @param {object} props - Propiedades del componente.
- * @param {function} props.onNavegar - Función para cambiar la vista (ej. a 'login').
+ * @param {function} props.onNavegar - Función para cambiar la vista.
  */
 const Registro = ({ onNavegar }) => {
     
@@ -56,7 +56,7 @@ const Registro = ({ onNavegar }) => {
         }
 
         if (!formData.aceptaTerminos) {
-            setMessage({ type: 'error', text: 'Debes aceptar los términos y condiciones.' });
+            setMessage({ type: 'error', text: 'Debe aceptar los términos y condiciones.' });
             setLoading(false);
             return;
         }
@@ -96,7 +96,7 @@ const Registro = ({ onNavegar }) => {
                 // Código 201: Registro exitoso
                 setMessage({ 
                     type: 'success', 
-                    text: result.mensaje || '¡Registro exitoso! Serás redirigido al inicio de sesión.' 
+                    text: result.mensaje || '¡Registro exitoso! Sera redirigido al inicio de sesión.' 
                 });
                 
                 // Redirigir al login después de un breve mensaje de éxito
